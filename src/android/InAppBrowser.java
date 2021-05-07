@@ -923,6 +923,9 @@ public class InAppBrowser extends CordovaPlugin {
                 toolbar.addView(close);
 
                 // Footer
+                int footerSize = this.dpToPixels(44);
+
+                // Footer
                 RelativeLayout footer = new RelativeLayout(cordova.getActivity());
                 int _footerColor;
                 if(footerColor != "") {
